@@ -1,0 +1,27 @@
+{
+  "name": "imdb-analytics-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack IMDb movie reviews analytics application with React frontend and Flask backend",
+  "scripts": {
+    "setup": "cd imdb_venv && Scripts\\activate && python imdb.py && python pre.py && python mapr.py",
+    "backend": "cd imdb_venv && Scripts\\activate && python app.py",
+    "frontend": "cd imdb_frontend && npm install && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "install-frontend": "cd imdb_frontend && npm install",
+    "build-frontend": "cd imdb_frontend && npm run build"
+  },
+  "keywords": [
+    "imdb",
+    "sentiment-analysis",
+    "react",
+    "flask",
+    "mongodb",
+    "data-visualization",
+    "movie-reviews"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
